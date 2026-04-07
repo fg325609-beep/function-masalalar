@@ -19,21 +19,35 @@
 
 
 
-let son = prompt("son kiriting");
-function  sign(n){
-    if (n < 0) {
-        alert(son --);
+// let son = +(prompt("son kiriting"));
 
-        
-    }
-     else if (son >0){
-        alert(son ++);
-          
-        
-    }
-    else(son === 0 ){
-        alert(0);
+// function sign(n) {
+//     if (n < 0) {
+//         return -1;
+//     } else if (n > 0) {
+//         return 1;
+//     } else {
+//         return 0;
+//     }
+// }
 
-    }
-}
-console.log(sign(son));
+// console.log(sign(son));
+
+
+
+// function numberOfRoots(A, B, C) {
+//     let D = B * B - 4 * A * C;
+
+//     if (D > 0) {
+//         return 2;
+//     } else if (D === 0) {
+//         return 1;
+//     } else {
+//         return 0;
+//     }
+// }
+
+// console.log(numberOfRoots(1, -6, 9)); 
+
+
+

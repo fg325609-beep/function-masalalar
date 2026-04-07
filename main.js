@@ -51,3 +51,12 @@
 
 
 
+// function areaCircle(R) {
+//     let S = Math.PI * R ** 2
+//     return S
+
+// }
+// console.log(areaCircle(3));
+
+
+

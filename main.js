@@ -60,3 +60,20 @@
 
 
 
+let a = +prompt(" a sonini kiriting")
+let b = +prompt(" b sonini kiriting");
+function sumRange(a, b)  {
+    if(a > b ){
+        return 0;
+    }
+    let sum  = 0;
+    for (let i = a ; i <= b ; i++){
+
+        sum += i;
+
+    }
+    return sum;
+
+}
+
+console.log(sumRange(a,b));

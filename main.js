@@ -295,17 +295,113 @@
 
 
 
-function sumOddEven(N) {
-    if (N % 2 === 0) {
-        let count = N / 2;
-        return "juft sonlar yigindisi " + (count * (count + 1));
+// function sumOddEven(N) {
+//     let sumJuft = 0;
+//     let sumToq = 0;
+
+//     for (let i = 1; i <= N; i++) {
+//         if (i % 2 === 0) {
+//             sumJuft += i; 
+//         } else {
+//             sumToq += i; 
+//         }
+//     }
+//     return `${sumJuft}, ${sumToq}`;
+// }
+// console.log(sumOddEven(10)); 
+
+
+// function invertTime(H, M, S){
+//     let sekund = H * 3600;
+//     let minut = M * 60;
+//     return sekund + minut + S;
+
+// }
+// console.log(invertTime(0, 6, 40));
+
+
+
+// function decTime(H, M, S) {
+//     let totalSeconds = (H * 3600) + (M * 60) + S - 1;
+
+//     if (totalSeconds < 0) {
+//         totalSeconds = 86400 - 1; 
+//     }
+
+//     let newH = Math.floor(totalSeconds / 3600);
+//     let newM = Math.floor((totalSeconds % 3600) / 60);
+//     let newS = totalSeconds % 60;
+
+//     let format = (num) => num.toString().padStart(2, '0');
+
+//     return `${format(newH)}:${format(newM)}:${format(newS)}`;
+// }
+
+// console.log(decTime(0, 6, 40)); 
+// console.log(decTime(1, 0, 0));  
+
+
+// function  isLeapYear(Y){
+//     if ((Y % 400 === 0) || ( Y % 4 === 0 && Y % 100 !== 0)){
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+
+// }
+
+// console.log(isLeapYear(2024));
+// console.log(isLeapYear(2000)); 
+// console.log(isLeapYear(1900));
+// console.log(isLeapYear(2023)); 
+
+
+
+// function isLeapYear(Y) {
+//     return (Y % 400 === 0) || (Y % 4 === 0 && Y % 100 !== 0);
+// }
+
+// function monthDays(M, Y) {
+//     // M = oy tartib raqami (1-12)
+//     // Y = yil
+    
+//     switch (M) {
+//         case 2: // Fevral
+//             return isLeapYear(Y) ? 29 : 28;
+            
+//         case 4: // Aprel
+//         case 6: // Iyun
+//         case 9: // Sentyabr
+//         case 11: 
+//             return 30;
+            
+//         default: 
+//             return 31;
+//     }
+// }
+
+// console.log(monthDays(2, 2020)); 
+// console.log(monthDays(2, 2021));
+// console.log(monthDays(3, 2021)); 
+
+
+function prevDate(D, M, Y) {
+    if (D > 1) {
+        D = D - 1;
     } 
-    else { 
-       
-        let count = (N + 1) / 2;
-        return "toq sonlar yigindisi " + (count * count);
+    else {
+        M = M - 1;
+        if (M === 0) {
+            M = 12;
+            Y = Y - 1;
+        }
+        
+        D = monthDays(M, Y);
     }
+
+    return D + "." + M + "." + Y;
 }
 
-console.log(sumOddEven(10)); 
-console.log(sumOddEven(9));  
+console.log(prevDate(10, 3, 2022)); 
+console.log(prevDate(1, 1, 2022));  

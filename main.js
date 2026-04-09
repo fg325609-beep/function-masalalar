@@ -127,3 +127,32 @@
 // let natija = isEven(k);
 // console.log(natija); 
 // alert(natija);
+
+
+
+let a = +prompt("a sonini kiriting");
+let b = +prompt("b sonini kiriting");
+let c = +prompt("c sonini kiriting");
+function sortABC(a, b, c){
+  let min = Math.min(a, b, c);
+  let max =  Math.max(a, b, c);
+ let orta = (a + b + c) - min - max;
+
+}
+console.log(min + ", " + orta + ", " + max);
+sortABC(a, b, c);
+// let a = +prompt("a sonini kiriting");
+// let b = +prompt("b sonini kiriting");
+// let c = +prompt("c sonini kiriting");
+
+// function sortABC(a, b, c) {
+//     let min = Math.min(a, b, c);
+//     let max = Math.max(a, b, c);
+//     let orta = (a + b + c) - min - max;
+
+//     // Natijani funksiya ichida chiqaramiz
+//     console.log(min + ", " + orta + ", " + max);
+// }
+
+// // Funksiyani chaqiramiz
+// sortABC(a, b, c);

@@ -60,20 +60,53 @@
 
 
 
-let a = +prompt(" a sonini kiriting")
-let b = +prompt(" b sonini kiriting");
-function sumRange(a, b)  {
-    if(a > b ){
-        return 0;
-    }
-    let sum  = 0;
-    for (let i = a ; i <= b ; i++){
+// let a = +prompt(" a sonini kiriting")
+// let b = +prompt(" b sonini kiriting");
+// function sumRange(a, b)  {
+//     if(a > b ){
+//         return 0;
+//     }
+//     let sum  = 0;
+//     for (let i = a ; i <= b ; i++){
 
-        sum += i;
+//         sum += i;
 
-    }
-    return sum;
+//     }
+//     return sum;
 
-}
+// }
 
-console.log(sumRange(a,b));
+// console.log(sumRange(a,b));
+
+
+
+// let a = +prompt("a soninin kiritig");
+// let b = +prompt("b sonini kiriting");
+// let s = +prompt("c sonini lirtitn");
+// function calc(a,b,s){
+
+// if (s === "+") {
+//     return a +b;
+
+    
+// } else if (s === "-") {
+//     return a - b;
+
+    
+// }
+// else if ( s === " *"){
+//     return a * b;
+
+// }
+// else if (s ==="/"){
+//     return a / b;
+
+// }
+// else {
+//     return(0)
+// }
+// }
+// console.log(calc(10, 15, "*")); 
+// console.log(calc(7, 8, "+"));   
+// console.log(calc(5, 0, "/"));   
+// console.log(calc(10, 2, "%"));

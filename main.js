@@ -130,29 +130,124 @@
 
 
 
-let a = +prompt("a sonini kiriting");
-let b = +prompt("b sonini kiriting");
-let c = +prompt("c sonini kiriting");
-function sortABC(a, b, c){
-  let min = Math.min(a, b, c);
-  let max =  Math.max(a, b, c);
- let orta = (a + b + c) - min - max;
-
-}
-console.log(min + ", " + orta + ", " + max);
-sortABC(a, b, c);
 // let a = +prompt("a sonini kiriting");
 // let b = +prompt("b sonini kiriting");
 // let c = +prompt("c sonini kiriting");
+// function sortABC(a, b, c){
+//   let min = Math.min(a, b, c);
+//   let max =  Math.max(a, b, c);
+//  let orta = (a + b + c) - min - max;
 
-// function sortABC(a, b, c) {
-//     let min = Math.min(a, b, c);
-//     let max = Math.max(a, b, c);
-//     let orta = (a + b + c) - min - max;
+// }
+// console.log(min + ", " + orta + ", " + max);
+// sortABC(a, b, c);
 
-//     // Natijani funksiya ichida chiqaramiz
-//     console.log(min + ", " + orta + ", " + max);
+// let k = +prompt("kkkk")
+// let N = +prompt("nnn")
+// function isPowerN(K, N){
+//     if ( K === 1){
+//         return true
+//     }
+//     if(K < 1 || K % N !== 0){
+
+//         return false
+//     }
+// return isPowerN(K / N, N);
+// }
+// console.log(isPowerN(k,N));
+
+
+
+// let N = prompt("n kirit");
+// function isPrime(N){
+//     if (N > 0 && N % 2  !== 0) {
+//         return true
+        
+//     } else {
+//         return false
+        
+//     }
 // }
 
-// // Funksiyani chaqiramiz
-// sortABC(a, b, c);
+// console.log(isPrime(N));
+
+
+// function isPrime(n) {
+//     if (n < 2) return false; 
+//     for (let i = 2; i <= Math.sqrt(n); i++) {
+//         if (n % i === 0) {
+//             return false; 
+//         }
+//     }
+//     return true; 
+// }
+
+// function numberOfPrime(N) {
+//     let count = 0;
+//     for (let i = 2; i <= N; i++) {
+//         if (isPrime(i)) {
+//             count++; 
+//         }
+//     }
+//     return count;
+// }
+
+// let n = 10;
+// console.log("Natija:", numberOfPrime(n));
+
+
+// function digitCount(K) {
+//     return String(K).length;
+// }
+
+// function digitNth(K, N) {
+//     if (digitCount(K) < N) {
+//         return -1;
+//     }
+
+//     let sK = String(K);
+    
+//     return Number(sK[N - 1]);
+// }
+
+// console.log(digitNth(105782, 5));
+// console.log(digitNth(1057, 5));   
+
+
+// function inverseNumberMath(n) {
+//     let reversed = 0;
+    
+//     while (n > 0) {
+//         let digit = n % 10;                
+//         reversed = (reversed * 10) + digit; 
+//         n = Math.floor(n / 10);           
+//     }
+    
+//     return reversed;
+// }
+
+// console.log(inverseNumberMath(56814)); 
+
+
+
+
+
+
+
+function inverseNumber(n) {
+    let reversed = 0;
+    let tempN = n;
+    
+while (tempN > 0) {
+        reversed = (reversed * 10) + (tempN % 10);
+        tempN = Math.floor(tempN / 10);
+    }
+    return reversed;
+}
+
+function isPalindrom(N) {
+    return N === inverseNumber(N);
+}
+console.log(isPalindrom(1678761)); 
+console.log(isPalindrom(12345));   
+console.log(isPalindrom(78987));   

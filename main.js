@@ -110,3 +110,20 @@
 // console.log(calc(7, 8, "+"));   
 // console.log(calc(5, 0, "/"));   
 // console.log(calc(10, 2, "%"));
+
+
+
+// let k = +prompt("son kiriting");
+// function isEven(k){
+//     if (k % 2 === 0) {
+//     return(true)
+        
+//     } else {
+//         return(false)
+        
+//     }
+
+// }
+// let natija = isEven(k);
+// console.log(natija); 
+// alert(natija);

@@ -234,20 +234,78 @@
 
 
 
-function inverseNumber(n) {
-    let reversed = 0;
-    let tempN = n;
+// function inverseNumber(n) {
+//     let reversed = 0;
+//     let tempN = n;
     
-while (tempN > 0) {
-        reversed = (reversed * 10) + (tempN % 10);
-        tempN = Math.floor(tempN / 10);
+// while (tempN > 0) {
+//         reversed = (reversed * 10) + (tempN % 10);
+//         tempN = Math.floor(tempN / 10);
+//     }
+//     return reversed;
+// }
+
+// function isPalindrom(N) {
+//     return N === inverseNumber(N);
+// }
+// console.log(isPalindrom(1678761)); 
+// console.log(isPalindrom(12345));   
+// console.log(isPalindrom(78987));   
+
+
+// let N = prompt(" n kirit");
+// function factorial(N){
+//     if (N < 0){
+//         return 1
+//     }
+//     let result = 1 ;
+//     for (let i = 1; i<= N; i++){
+//         result *= i;
+
+//     }
+//     return result;
+
+// }
+// console.log(factorial(5));  
+// console.log(factorial(0));  
+// console.log(factorial(-5)); 
+// console.log(factorial(10));
+
+
+// /**
+//  * 1 dan N gacha bo'lgan sonlar ichida 3 ga bo'linadiganlarining yig'indisini hisoblaydi
+//  */
+// function getSum3(N) {
+//     let sum = 0;
+
+//     // 1 dan N gacha bo'lgan barcha sonlarni ko'rib chiqamiz
+//     for (let i = 1; i <= N; i++) {
+//         // Agar son 3 ga bo'linsa (qoldiq 0 bo'lsa)
+//         if (i % 3 === 0) {
+//             sum += i; // Yig'indiga qo'shamiz
+//         }
+//     }
+
+//     return sum;
+// }
+
+// // Tekshirib ko'ramiz:
+// console.log(getSum3(15)); // Natija: 45
+// console.log(getSum3(10)); // Natija: 18 (3 + 6 + 9)
+
+
+
+function sumOddEven(N) {
+    if (N % 2 === 0) {
+        let count = N / 2;
+        return "juft sonlar yigindisi " + (count * (count + 1));
+    } 
+    else { 
+       
+        let count = (N + 1) / 2;
+        return "toq sonlar yigindisi " + (count * count);
     }
-    return reversed;
 }
 
-function isPalindrom(N) {
-    return N === inverseNumber(N);
-}
-console.log(isPalindrom(1678761)); 
-console.log(isPalindrom(12345));   
-console.log(isPalindrom(78987));   
+console.log(sumOddEven(10)); 
+console.log(sumOddEven(9));  
